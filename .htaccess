@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*) /sistema/index.php?url=$1 [QSA,L] 
+#Lembrar de alterar o nome da pasta na linha acima onde esta escrito 'sistema' sera a pasta do seu projeto.
+
+Options All -indexes
+
+
